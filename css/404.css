@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "微软雅黑";
+}
+
+
+/* 整个上半区板块 */
+.wrapper {
+position: relative;
+width: 99.9%;
+/* 因为padding1px 导致这里有问题 */
+background: linear-gradient(180deg, black 85%, hsla(222deg 20% 7%/1) 100% );
+padding: 1px;
+margin: 0 0;
+}
+
+/* 视频区域 */
+.top-div-video{
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 100px auto;
+width: 35%;
+height:100%;
+
+}
+/* 头部视频 */
+.top-div-video video{
+display: flex;
+color: rgb(230, 230, 230);
+width: 100%;
+height: 100%;
+}
+.text-info{
+font-size: 1.5rem;
+
+color:white;
+position:absolute;
+bottom: 100%;
+}
+.text-info font{
+color: red;
+font-weight: bolder;
+}
+
+/* 本来是登录，结果这个不是首页，就成了主页按钮了 */
+#login{
+display: flex;
+position: absolute;
+top: 25%;
+left: 5%;
+color: rgb(255, 255, 255);
+
+}
+#login a:link,a:visited{
+color:rgb(230, 230, 230);
+font-weight: 900;
+font-size: 2rem;
+text-decoration: none;
+/* 动画时间 */
+transition: font-size ease 0.6s;
+}
+#login a:hover {
+color:red;
+font-weight: 900;
+font-size: 3rem;
+text-decoration: none;
+/* 边缘效果 */
+text-shadow:-10px 5px 6px red;
+}
+
+
+/* 404提升 */
+
+.nothe{
+    
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    color: rgb(255, 255, 255);
+    text-shadow:-10px 5px 6px red;
+}
+
+
+/* 下面的组员那些图标的链接 */
+.container {
+    display: flex;
+    justify-content: center;
+  margin-top: 5px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 3rem;
+    position: relative;
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid rgba(59, 58, 58, 0.46);
+    border-radius: 20px;
+    box-shadow: -10px 5px 10px gray;
+    top: 0;
+    transition: top ease 0.6s;
+}
+/* 鼠标放在div上的情况 */
+.box:hover {
+    top: -66px;
+}
