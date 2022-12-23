@@ -3,7 +3,9 @@
     margin: 0;
     font-family: "微软雅黑";
 }
-
+a{
+    text-decoration: none;
+}
 
 /* 整个上半区板块 */
 .wrapper {
@@ -92,6 +94,7 @@ text-shadow:-10px 5px 6px red;
 }
 
 .box {
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;

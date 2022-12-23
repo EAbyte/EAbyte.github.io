@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抗疫专题</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      jinrishici.load(function(result) {
+        var sentence =document.querySelector("#verse")
+        sentence.innerHTML = result.data.content+'  '+result.data.origin.author
+      });
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        window.onscroll = function() {
+          //为了保证兼容性，这里取两个值，哪个有值取哪一个
+          //scrollTop就是触发滚轮事件时滚轮的高度
+          var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+          var topbar=document.getElementById("topbar");
+          if(scrollTop>60){
+            topbar.style.background="#333";
+          }
+          else if(scrollTop<60)
+          {
+            topbar.style.background="none";
+          }
+          }
+        </script>
+    <div class="topbar-root">
+        <div class="topbar-a">
+            <div class="topbar-b" id="topbar">
+                <div class="topbar-c">
+                    
+                    <div class="topbar-icon">
+                        <svg version="1.1" class="topbar-icon"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 32 32" xml:space="preserve">
+                  
+                            <circle cx="10.958" cy="17.145" r="1.388"/>
+                            <circle cx="20.779" cy="17.145" r="1.388"/>
+                            <path d="M18.614,23.711c-0.03,0.037-0.795,0.928-2.562,0.928c-1.772,0-2.598-0.778-2.611-0.797c-0.133-0.133-0.351-0.133-0.481,0
+                                c-0.135,0.131-0.136,0.351-0.004,0.482c0.041,0.041,1.01,0.998,3.099,0.998c2.108,0,3.052-1.133,3.091-1.18
+                                c0.116-0.146,0.097-0.357-0.051-0.479C18.949,23.545,18.734,23.564,18.614,23.711z"/>
+                            <path d="M30.597,17.195c-0.242-2.236-1.175-2.706-1.91-2.706c-0.123,0-0.241,0.016-0.355,0.04c0.12-0.604,0.207-2.082,0.207-2.417
+                                C28.535,5.423,22.923,0,15.999,0C9.075,0,3.462,5.423,3.462,12.112c0,0.479-0.095,1.65-0.013,2.389
+                                c-0.046-0.003-0.089-0.012-0.135-0.012c-0.737,0-1.667,0.47-1.912,2.706c-0.362,3.312,1.75,4.469,2.545,4.781
+                                c0.523,1.611,3.671,10.021,11.975,10.022h0.08c8.355-0.055,11.521-8.418,12.048-10.021C28.845,21.666,30.96,20.512,30.597,17.195z
+                                 M13.694,8.541c0,0,0.816,0.838-0.378,1.438c1.065,0.641,2.513-1.438,2.513-1.438s0.32,1.493-0.662,2.005
+                                c1.708,1.025,3.139-2.005,3.139-2.005s6.194-0.346,8.354,6.83c-0.18,0.134-0.351,0.258-0.479,0.348v-1.39h-9.188v1.465h-1.523
+                                v-1.465h-9.19v1.104h-0.67l-0.145-0.737C7.629,9.668,13.694,8.541,13.694,8.541z M25.692,14.818v4.559h-8.214v-4.559H25.692z
+                                 M6.765,18.76h6.387v-3.327H6.765v-0.614h8.217v4.558H6.765V18.76z M6.307,17.137c-0.322,0-0.587-0.264-0.587-0.588
+                                c0-0.326,0.265-0.587,0.587-0.587c0.325,0,0.59,0.263,0.59,0.587C6.896,16.873,6.632,17.137,6.307,17.137z M9.441,18.539v-2.881
+                                h3.485v2.881H9.441z M27.52,21.08l-0.294,0.07l-0.08,0.291c-0.026,0.096-2.735,9.479-11.149,9.533h-0.073
+                                c-8.35-0.002-11.043-9.438-11.067-9.531l-0.08-0.293l-0.296-0.07c-0.1-0.023-2.404-0.613-2.061-3.773
+                                c0.064-0.59,0.24-1.532,0.698-1.745c0.42,1.741,0.685,2.753,0.776,3.112v0.086h2.382v1.105h9.188v-2.408h1.522v2.408h9.188v-2.996
+                                c0.13-0.072,0.417-0.242,0.745-0.443l-0.024,0.281l0.962-0.834c0.087-0.076,0.48-0.359,0.822-0.359
+                                c0.604,0,0.818,1.125,0.895,1.792C29.92,20.438,27.613,21.057,27.52,21.08z"/>
+                        </svg>
+                            </div>
+                    <div class="topbar-word"><a href="#about"><p>关于新冠</p></a><div class="texiao-box"></div></div>
+                    <div class="topbar-word"><a href="#news_h1"><p>最新动态</p></a><div class="texiao-box"></div></div>
+                    <div class="topbar-word"><a href=""><p>病理病症</p></a><div class="texiao-box"></div></div>
+                    <div class="topbar-text"><p id="verse"></p></div>
+                <!-- 按理说有个搜索，暂时搁置了 -->
+                    <div class="topbar-scarch">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="head-image" id="top"></div>
+
+        <div class="main-box">
+            <div class="news-box" id="about">
+                <div class="news-box-h2"><h2>关于</h2>
+                </div> 
+            </div>  
+            <div class="news-down">
+               <a href="http://k.sina.com.cn/article_6493736182_1830e8cf601900zuue.html"><div class="news-covid-19-img">
+                    <h2>最新消息：专家表示新冠已不具备危险性</h2>
+                </div></a>
+                <div class="news-right-box">
+                    <a href="/qiyuan.html"><div class="news-right-top-box" id="box1">
+                        <h3>起源</h3>
+                    </div></a>
+                    <a href="/renwu.html">
+                    <div class="news-right-top-box" id="box3">
+                        <h3>人物</h3>
+                    </div></a>
+                </div>
+                <div class="news-right-box" id="news-right-B">
+                    <a href="/yingxiong.html"><div class="news-right-top-box" id="box2">
+                        <h3>英雄</h3>
+                    </div></a>
+                    <a href="https://new.qq.com/rain/a/20221223A00ABY00">
+                    <div class="news-right-top-box" id="box4">
+                        <h3>症状</h3>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+        <div id="sub-page">
+            <h1 class="news_h1" id="news_h1">新闻动态</h1>
+            
+            <ul class="news_list">
+
+
+                <!-- 第一条新闻 -->
+                <li>
+                    <div class="list_div">
+                       <a title="双节将至，农村如何应对新冠感染？" href="https://new.qq.com/rain/a/20221223A00GH400"><div class="news_image"> <img src="img/news/1000.webp" alt=""></div></a>
+                       <div class="list_right_div">
+                        <div class="list_right_top">
+                       <div class="svg_class">
+                        <span style="padding: 0;"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 21 21"><path d="M10.5262 0.405484C10.6791 -0.0482187 11.3209 -0.048218 11.4738 0.405484L13.7181 7.06297C13.7867 7.26632 13.9773 7.40325 14.1919 7.40325H21.4143C21.9031 7.40325 22.1015 8.03243 21.7011 8.31282L15.8901 12.3821C15.7084 12.5093 15.6323 12.7411 15.7031 12.9514L17.9302 19.5576C18.0844 20.015 17.565 20.4038 17.1695 20.1269L11.2868 16.0073C11.1146 15.8868 10.8854 15.8868 10.7132 16.0073L4.83046 20.1269C4.43504 20.4038 3.91564 20.015 4.06985 19.5576L6.29686 12.9514C6.36773 12.7411 6.29159 12.5093 6.10986 12.3821L0.298873 8.31281C-0.101525 8.03243 0.0968704 7.40325 0.58568 7.40325H7.80809C8.02268 7.40325 8.21334 7.26632 8.28189 7.06297L10.5262 0.405484Z"></path></svg></span>
+                    </div>
+                    <span>一天前</span>
+                    </div>
+                    <a href="https://new.qq.com/rain/a/20221223A00GH400"><h2>双节将至，农村如何应对新冠感染？</h2></a>
+                     <span class="neirong">农村有基础病的老人，加上新冠病毒的冲击,该怎么办？</span>
+                     <span class="neirong">地域宽广、人口庞大，但人均医疗资源有限的中国农村地区，面对可能到来的新冠感染高峰，应该怎么办？还有面对即将到来的返乡潮，农村地区又应该做好哪些准备？</span>
+                     <span class="bottm_span"><a href="https://new.qq.com/rain/a/20221223A00GH400"><h3>阅读更多></h3></a></span>
+                </div>
+            </div>
+                </li>
+
+
+                <!-- 第二条新闻 -->
+                <li>
+                    <div class="list_div">
+                        <a title="中科院院士陆林：疫情心理影响或超10年，医护、老幼尤需关注" href="https://www.toutiao.com/article/7180241555914375740/?log_from=ff99667bb0683_1671797058399"><div class="news_image"> <img src="img/news/news2.png" alt=""></div></a>
+                        <div class="list_right_div">
+                         <div class="list_right_top">
+                        <div class="svg_class">
+                         <span style="padding: 0;"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 21 21"><path d="M10.5262 0.405484C10.6791 -0.0482187 11.3209 -0.048218 11.4738 0.405484L13.7181 7.06297C13.7867 7.26632 13.9773 7.40325 14.1919 7.40325H21.4143C21.9031 7.40325 22.1015 8.03243 21.7011 8.31282L15.8901 12.3821C15.7084 12.5093 15.6323 12.7411 15.7031 12.9514L17.9302 19.5576C18.0844 20.015 17.565 20.4038 17.1695 20.1269L11.2868 16.0073C11.1146 15.8868 10.8854 15.8868 10.7132 16.0073L4.83046 20.1269C4.43504 20.4038 3.91564 20.015 4.06985 19.5576L6.29686 12.9514C6.36773 12.7411 6.29159 12.5093 6.10986 12.3821L0.298873 8.31281C-0.101525 8.03243 0.0968704 7.40325 0.58568 7.40325H7.80809C8.02268 7.40325 8.21334 7.26632 8.28189 7.06297L10.5262 0.405484Z"></path></svg></span>
+                     </div>
+                     <span>一天前</span>
+                     </div>
+                     <a href="https://www.toutiao.com/article/7180241555914375740/?log_from=ff99667bb0683_1671797058399"><h2>中科院院士陆林：疫情心理影响或超10年，医护、老幼尤需关注</h2></a>
+                    <span class="neirong">中科院院士陆林：疫情心理影响或超10年，医护、老幼尤需关注</span>
+                    <span class="neirong">中国科学院院士、北京大学第六医院院长陆林提供的一组数据显示，新冠疫情发生三年来，全球新增近7000万抑郁症患者，9000万焦虑症患者，1亿人出现失眠障碍。疫情对全人类精神心理健康的影响，最少要持续10-20年以上。</span>
+                    <span class="bottm_span"><a href="https://www.toutiao.com/article/7180241555914375740/?log_from=ff99667bb0683_1671797058399"><h3>阅读更多></h3></a></span>
+                 </div>
+             </div>
+         </li>
+
+
+            <!-- 第三条新闻 -->
+            <li>
+                <div class="list_div">
+                    <a title="北京“阳康”们已出发，三亚、海口、厦门等地最受欢迎" href="https://www.toutiao.com/article/7179991585147486752/?log_from=5b52e388065c5_1671799218103"><div class="news_image"> <img src="img/news/news3.jpg" alt=""></div></a>
+                    <div class="list_right_div">
+                     <div class="list_right_top">
+                    <div class="svg_class">
+                     <span style="padding: 0;"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 21 21"><path d="M10.5262 0.405484C10.6791 -0.0482187 11.3209 -0.048218 11.4738 0.405484L13.7181 7.06297C13.7867 7.26632 13.9773 7.40325 14.1919 7.40325H21.4143C21.9031 7.40325 22.1015 8.03243 21.7011 8.31282L15.8901 12.3821C15.7084 12.5093 15.6323 12.7411 15.7031 12.9514L17.9302 19.5576C18.0844 20.015 17.565 20.4038 17.1695 20.1269L11.2868 16.0073C11.1146 15.8868 10.8854 15.8868 10.7132 16.0073L4.83046 20.1269C4.43504 20.4038 3.91564 20.015 4.06985 19.5576L6.29686 12.9514C6.36773 12.7411 6.29159 12.5093 6.10986 12.3821L0.298873 8.31281C-0.101525 8.03243 0.0968704 7.40325 0.58568 7.40325H7.80809C8.02268 7.40325 8.21334 7.26632 8.28189 7.06297L10.5262 0.405484Z"></path></svg></span>
+                 </div>
+                 <span>二天前</span>
+                 </div>
+                 <a href="https://www.toutiao.com/article/7179991585147486752/?log_from=5b52e388065c5_1671799218103"><h2>北京“阳康”们已出发，三亚、海口、厦门等地最受欢迎</h2></a>
+                <span class="neirong">北京迎战奥密克戎冲击的两周后，第一波“阳康”已经恢复正常的生活。</span>
+                <span class="neirong">去哪儿数据显示，三亚、成都、海口、重庆、上海、深圳、昆明、广州、厦门和哈尔滨是12月19日至21日出发人的首选目的地。</span>
+                <span class="bottm_span"><a href="https://www.toutiao.com/article/7179991585147486752/?log_from=5b52e388065c5_1671799218103"><h3>阅读更多></h3></a></span>
+             </div>
+         </div>
+        </li>
+
+
+         <!-- 第四条新闻 -->
+         <li>
+            <div class="list_div">
+                <a title="放开后多久能恢复正常生活？张伯礼给出时间表" href="https://new.qq.com/rain/a/20221223A00GH400"><div class="news_image"> <img src="img/news/news4.jpg" alt=""></div></a>
+                <div class="list_right_div">
+                 <div class="list_right_top">
+                <div class="svg_class">
+                 <span style="padding: 0;"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 21 21"><path d="M10.5262 0.405484C10.6791 -0.0482187 11.3209 -0.048218 11.4738 0.405484L13.7181 7.06297C13.7867 7.26632 13.9773 7.40325 14.1919 7.40325H21.4143C21.9031 7.40325 22.1015 8.03243 21.7011 8.31282L15.8901 12.3821C15.7084 12.5093 15.6323 12.7411 15.7031 12.9514L17.9302 19.5576C18.0844 20.015 17.565 20.4038 17.1695 20.1269L11.2868 16.0073C11.1146 15.8868 10.8854 15.8868 10.7132 16.0073L4.83046 20.1269C4.43504 20.4038 3.91564 20.015 4.06985 19.5576L6.29686 12.9514C6.36773 12.7411 6.29159 12.5093 6.10986 12.3821L0.298873 8.31281C-0.101525 8.03243 0.0968704 7.40325 0.58568 7.40325H7.80809C8.02268 7.40325 8.21334 7.26632 8.28189 7.06297L10.5262 0.405484Z"></path></svg></span>
+             </div>
+             <span>五天前</span>
+             </div>
+             <a href="https://www.toutiao.com/article/7180241555914375740/?log_from=ff99667bb0683_1671797058399"><h2>放开后多久能恢复正常生活？张伯礼给出时间表</h2></a>
+            <span class="neirong">这几日，我们见证了一些发“疫情财”的丑恶嘴脸，很多人买不到药，但有人却趁机囤药，抬高价格来赚取暴利。还有人借机炒作，让人们去抢黄桃罐头、电解质水等无用的商品。</span>
+            <span class="neirong">随着感染的人越来越多，再加上这些乱象。关于放开和清零的争论又开始了，为什么选择在这个时候放开……</span>
+            <span class="bottm_span"><a href="https://www.toutiao.com/article/7180241555914375740/?log_from=ff99667bb0683_1671797058399"><h3>阅读更多></h3></a></span>
+         </div>
+     </div>
+    </li>
+            </ul>
+            <ul class="menu_list"> 
+                <li><a title="第1页" href="/404.html">1</a></li>
+                <li><a title="第2页" href="/404.html">2</a></li>
+                <li><a title="第3页" href="/404.html">3</a></li>
+                <li><a title="第4页" href="/404.html">4</a></li>
+                <li><a title="更多" href="/404.html">...</a></li>
+                <li><a title="第88页" href="/404.html">88</a></li>
+                <li style="line-height: normal;"><a title="更多" href="/404.html"><span ><svg style="height: 12px;width: 12px;" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 5 9"><path stroke="currentColor" d="M1 1l3 3.5L1 8" fill="none" fill-rule="evenodd"></path></svg></span></a></li>
+            </ul>
+        </div>
+        </div>
+    <div class="bottom_bar">
+        <ul style="margin-top: 30px;margin-bottom: 30px;"><!--这里只能采用行内式，让他跟上面有一些距离-->
+            <li><h3>关于我们</h3></li>
+            <li>
+                <div class="all_icon">
+                <!--qq图标--><a title="我们的qq" href="https://qm.qq.com/cgi-bin/qm/qr?k=85IIXFgYOVROz-hqtFPHxekyilKqaNsE&noverify=0"><svg class="qq_icon"  viewBox="0 0 24 24" ><path d="M12.003 2c-2.265 0-6.29 1.364-6.29 7.325v1.195S3.55 14.96 3.55 17.474c0 .665.17 1.025.281 1.025.114 0 .902-.484 1.748-2.072 0 0-.18 2.197 1.904 3.967 0 0-1.77.495-1.77 1.182 0 .686 4.078.43 6.29 0 2.239.425 6.287.687 6.287 0 0-.688-1.768-1.182-1.768-1.182 2.085-1.77 1.905-3.967 1.905-3.967.845 1.588 1.634 2.072 1.746 2.072.111 0 .283-.36.283-1.025 0-2.514-2.166-6.954-2.166-6.954V9.325C18.29 3.364 14.268 2 12.003 2z" fill-rule="evenodd"></path></svg></a>
+                <!--wx图标--><a title="我们的微信" href="/404.html"><svg class="qq_icon"  viewBox="0 0 24 24" ><path d="M2.224 21.667s4.24-1.825 4.788-2.056C15.029 23.141 22 17.714 22 11.898 22 6.984 17.523 3 12 3S2 6.984 2 11.898c0 1.86.64 3.585 1.737 5.013-.274.833-1.513 4.756-1.513 4.756zm5.943-9.707c.69 0 1.25-.569 1.25-1.271a1.26 1.26 0 0 0-1.25-1.271c-.69 0-1.25.569-1.25 1.27 0 .703.56 1.272 1.25 1.272zm7.583 0c.69 0 1.25-.569 1.25-1.271a1.26 1.26 0 0 0-1.25-1.271c-.69 0-1.25.569-1.25 1.27 0 .703.56 1.272 1.25 1.272z" fill-rule="evenodd"></path></svg></a>
+                <!--微博图标--><a title="我们的微博" href="/404.html"><svg class="qq_icon"  viewBox="0 0 24 24" ><path d="M15.518 3.06c8.834-.854 7.395 7.732 7.394 7.731-.625 1.439-1.673.309-1.673.309.596-7.519-5.692-6.329-5.692-6.329-.898-1.067-.029-1.711-.029-1.711zm4.131 6.985c-.661 1.01-1.377.126-1.376.126.205-3.179-2.396-2.598-2.396-2.598-.719-.765-.091-1.346-.091-1.346 4.882-.551 3.863 3.818 3.863 3.818zM5.317 7.519s4.615-3.86 6.443-1.328c0 0 .662 1.08-.111 2.797.003-.003 3.723-1.96 5.408.159 0 0 .848 1.095-.191 2.649 0 0 2.918-.099 2.918 2.715 0 2.811-4.104 6.44-9.315 6.44-5.214 0-8.026-2.092-8.596-3.102 0 0-3.475-4.495 3.444-10.33zm10.448 7.792s.232-4.411-5.71-4.207c-6.652.231-6.579 4.654-6.579 4.654.021.39.097 3.713 5.842 3.713 5.98 0 6.447-4.16 6.447-4.16zm-9.882.86s-.059-3.632 3.804-3.561c3.412.06 3.206 3.165 3.206 3.165s-.026 2.979-3.684 2.979c-3.288 0-3.326-2.583-3.326-2.583zm2.528 1.037c.672 0 1.212-.447 1.212-.998 0-.551-.543-.998-1.212-.998-.672 0-1.215.447-1.215.998 0 .551.546.998 1.215.998z" fill-rule="evenodd"></path></svg></a>
+                <!--返回顶部图标--><a title="回到顶部" href="#top"><svg class="qq_icon" style="position: absolute;right: 0;" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 471.2 471.2" style="enable-background:new 0 0 471.2 471.2;" xml:space="preserve">
+                       <path d="M396.7,0H74.5C33.4,0,0,33.4,0,74.5v322.2c0,41.1,33.4,74.5,74.5,74.5h322.2c41.1,0,74.5-33.4,74.5-74.5V74.5
+                           C471.2,33.5,437.7,0,396.7,0z M444.2,396.7c0,26.2-21.3,47.5-47.5,47.5H74.5c-26.2,0-47.5-21.3-47.5-47.5V74.5
+                           C27,48.3,48.3,27,74.5,27h322.2c26.2,0,47.5,21.3,47.5,47.5V396.7z"/>
+                       <path d="M245.1,117.1c-5.3-5.3-13.8-5.3-19.1,0l-70.4,70.5c-5.3,5.3-5.3,13.8,0,19.1s13.8,5.3,19.1,0l47.5-47.5v185.4
+                           c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5V159.2l47.4,47.4c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1
+                           L245.1,117.1z"/>
+               </svg>
+            </a>
+            
+            <!--反馈--><a title="反馈意见" href="#feedback_div">
+                <svg class="qq_icon"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.455 19L2 22.5V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6.455zM4 18.385L5.763 17H20V5H4v13.385zM11 13h2v2h-2v-2zm0-6h2v5h-2V7z"/>
+                </svg>
+                
+            </a>
+            
+            </div>
+        </li>
+        <li>
+            <div class="feedback_div" id="feedback_div">
+                <form action="/404.html" method="get">
+                    <textarea class="feedback" name="feedback" placeholder="请输入您的反馈"></textarea>
+                    <button class="button_submit" type="submit"><svg viewBox="0 0 1024 1024" class="icon" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M77.248 415.04a64 64 0 0190.496 0l226.304 226.304L846.528 188.8a64 64 0 1190.56 90.496l-543.04 543.04-316.8-316.8a64 64 0 010-90.496z"/></svg>
+                    </button>
+                </form>
+            </div>
+        </li>
+        <li>
+            <hr>
+        </li>
+        <li><p>没有版权，以上均为引用</p>
+            <p>如有侵权相关问题，请联系如下邮箱</p>
+            <address>ebyte@foxmail.com</address></li>
+            <li><h5>HTML@2022-2023</h5></li>
+        </ul>
+    </div>
+    <!-- 求同存异 -->
+</body>
+</html>
