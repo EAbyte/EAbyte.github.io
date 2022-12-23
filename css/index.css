@@ -1,0 +1,409 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(18,18,18);
+}
+
+.topbar-root{
+    font-weight: 400;
+}
+.topbar-a{
+    margin: 0;
+    padding: 0;
+}
+.topbar-b{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+.topbar-c{
+    font-size: 14px !important;
+    font-weight: bold;
+    height: 60px;
+    position: relative;
+    display: flex;
+    width: 100%;
+   
+}
+.topbar-icon{
+    margin-right: 30px;
+    fill: currentColor;
+    color: #ccc;
+    height: 58px;
+    width: 64px;
+    
+}
+.topbar-word{
+    
+    color: white;
+    height: 60px;
+    width: 100px;
+    line-height: 60px;
+    text-align: center;
+    
+}
+.topbar-word a:link,a:visited{
+    line-height: 60px;
+    color: #fff;
+    text-decoration: none;
+    
+}
+.topbar-word a p{
+    position: absolute;
+    bottom: 0;
+}
+.texiao-box{
+    position: absolute;
+    width: 56px;
+    height: 0px;
+    bottom: 0;
+    background-color: #0078f2;
+}
+.topbar-word:hover .texiao-box{
+    bottom: 0;  
+    height: 5px;
+    background-color: #0078f2;
+    position: absolute;
+    -webkit-transition: height .2s ease-in-out;
+    -o-transition: height .2s ease-in-out;
+     transition: all .2s ease-in-out;
+}
+.topbar-text{
+    position: absolute;
+    right: 5px;
+    color: white;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.text-box{
+    display: flex;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+/* 战疫最前线图片 */
+.head-image{
+    width: 100%;
+    height: 700px;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(http://p2.img.cctvpic.com/uploadimg/2020/02/02/1580604149718934.png);
+}
+
+
+/* 最新动态 */
+.main-box{
+    height: 600px;
+    width: 100%;
+    display: block;
+
+    
+    
+}
+/* 上面的H2那一行 */
+.news-box{
+    display: flex;
+    position: relative;
+    top: 5%;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin: auto;
+    height: auto;
+    width: auto;
+    max-width: 1800px;
+    text-align: left;
+}
+/* 新闻动态 */
+.news-box-h2{
+    display: flex;
+    position: relative;
+    color:#fff;
+    font-size: 3rem;
+}
+
+
+/* 最新动态的下半区 */
+.news-down{
+    margin: auto;
+    max-width: 1800px;
+    position: relative;
+    top:10%;
+    display: flex;
+
+}
+
+
+
+/* 下面的病毒图片 */
+.news-covid-19-img{
+    /* 透明边框 厚度3px */
+    border: transparent 3px solid;
+    position: relative;
+    background-image: url(../img/covid-19-info.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 410px;
+    width: 682px;
+    border-radius: 1rem;
+    text-align: center;
+}
+.news-covid-19-img:hover{
+    border: #fff 3px solid;
+}
+.news-covid-19-img h2{
+    color: #fff;
+    position: relative;
+    line-height: 410px;
+}
+
+
+.news-right-box{
+    position: relative;
+    left: 100px;
+    display: block;
+    
+}
+#box1{
+    background-image: url(../img/martin-sanchez-j2c7yf223Mk-unsplash.jpg);
+}
+#box2{
+    background-image: url(../img/vladimir-fedotov-IJ4WYjq1EaI-unsplash.jpg);
+}
+#box3{
+    position: relative;
+    top: 10px;
+    background-image: url(../img/renwu.jpg);
+}
+#box4{
+    position: relative;
+    top: 10px;
+    background-image: url(../img/zhengzhuang.jpg);
+}
+.news-right-top-box{
+    border:transparent 3px solid;
+    background-repeat: no-repeat;
+    position: relative;
+    line-height: 200px;
+    display: block;
+    background-size: cover;
+    color: #fff;
+    height: 200px;
+    width: 500px;
+    border-radius: 1rem;
+    text-align: center;
+}
+.news-right-top-box:hover{
+    border:#fff 3px solid;
+    
+}
+#news-right-B{
+    left: 150px;
+}
+
+
+/* 大图介绍区域 */
+#sub-page{
+    margin-top: 50px;
+
+    width: 100%;
+    
+}
+
+
+
+/*下方ul列表*/
+.news_h1{
+    margin-bottom: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    left: 30vh;
+    
+}
+.news_list{
+    padding: 0;
+    margin: 0;
+    width: 130vh;
+    list-style-type: none;
+    margin: 0 auto;
+}
+.news_list li{
+    padding-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    width: 100%;
+    border-top:2px solid rgba(255, 255, 255, 0.20);
+}
+.news_list li img{
+    border-radius: 0.7rem;
+    height: 100%;
+    width: 100%;
+}
+
+.list_div{/*包住一个li内部内容*/
+    color: #fff;
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}       
+.list_div a:visited,a:link{
+    color: #fff;
+   text-decoration: none;
+} 
+.list_div h3{
+    position: relative;
+}
+.list_div h3:hover{
+
+    top: 2px;
+    border-bottom: #fff 2px solid;
+
+}
+.news_image{/*用来包住图片的div*/
+    position: relative;
+    height: 200px;
+    width: 300px;
+}
+.list_right_div{
+    height: 200px;
+    position: relative;
+    margin-left: 20px;
+}
+.list_right_top{/*星星图标*/
+    position: relative;
+    display: flex;
+    width: 100%;
+    color:rgba(255, 255, 255, 0.5);
+}        
+.svg_class{
+    height: 12px;
+    width: 12px;
+}
+.svg_class path{
+    fill: currentColor;
+}
+.list_right_top span{
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+
+/*简要内容*/
+.neirong{
+    margin-top: 15px;
+    display: block;
+    color:rgba(255, 255, 255, 0.5);
+}
+/*底部查看更多*/
+.bottm_span{
+    position: absolute;
+    bottom: 0px;
+}
+
+
+
+/*下面的选页按钮*/
+.menu_list{
+    justify-content: center;
+    margin: auto;
+    width: 130vh;
+    color: rgba(245, 245, 245, 0.6);
+    display: flex;
+    list-style-type: none;
+}
+.menu_list li{
+    text-align: center;
+    height: 25px;
+    width: 30px;
+}
+.menu_list a{
+    line-height: 20px;
+}
+.menu_list a:link,a:visited{
+    color: rgba(245, 245, 245, 0.6);
+}
+.menu_list a:hover{
+    color: #fff;
+}
+
+
+
+/*底栏部分*/
+.bottom_bar{
+ 
+    position: relative;
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    width: 100%;
+}
+.bottom_bar ul{
+    color: #ccc;
+    position: relative;
+    list-style-type: none;
+    margin: auto;
+    width: 90%;
+}
+.bottom_bar h3{
+   
+    margin-bottom: 10px;
+    /*让关于我们与图标稍微对齐一下*/
+}
+.bottom_bar a:visited,a:link{
+    color: #ccc;
+}
+.all_icon{
+    display: flex;
+}
+.qq_icon{
+    position: relative;
+    margin-right: 15px;
+    height: 40px;
+    width: 40px;
+}
+.qq_icon path{
+    fill: currentColor;
+}
+.bottom_bar a:hover{
+    color: #0078f2;
+}
+
+
+
+.feedback{/*反馈栏目*/
+    color: #fff;
+    background: none;
+    border: solid 1px #bbb;
+    height: 100px;
+    width: 400px;          
+}
+.button_submit{
+    color: #bbb;
+    background: none;
+    width: 30px;
+    height: 30px;
+    border: none;
+}
+.feedback_div{
+    display: none;
+}
+.feedback_div:target{
+    display: flex;
+}
+#feedbacK_div:target{
+    
+    display: flex;
+}
+
+
+.bottom_bar hr{
+    margin: 1rem 0 1rem;
+    border-color:#ccc ;
+    border: solid none none;
+    height: 0;
+}

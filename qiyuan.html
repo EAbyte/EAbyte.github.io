@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			.biaoti { /* 定义标题 */
+				width: 100%; 
+				height: 50px; 
+				line-height: 50px; 
+				background-color: #274C9F; 
+				color: #fff; 
+				text-align: center; 
+				margin: 0 auto 0; 
+				clear: both; /* 删除浮动 */
+			}
+			#timeline { /* 定义时间轴的内容 */
+				position: relative; /* 相对定位 */
+				margin: 0px auto;
+				padding: 25px; 
+				width: 800px;
+				height: 2550px ;
+				box-sizing: border-box;
+			}
+			 
+			#timeline::before { /* 定义时间轴的线 */
+				content: '';
+				position: absolute;
+				left: 50%;
+				width: 2px;
+				height: 2500px;
+				background: #274C9F;
+			}
+			 
+			#timeline ul { /* 定义时间轴中的ul */
+				margin: 0;
+				padding: 0;
+			}
+			 
+			#timeline ul li { /* 定义时间轴中的ul中的li */
+				list-style: none;
+				line-height: normal;
+				position: relative;
+				width: 50%;
+				padding: 20px 40px;
+				box-sizing: border-box;
+			}
+			 
+			#timeline ul li:nth-child(odd) { /* 定义时间轴中li的奇数行 */
+				float: left;;
+				text-align: right;
+				clear: both;
+			}
+			 
+			#timeline ul li:nth-child(even) { /* 定义时间轴中li的奇数行 */
+				float: right;;
+				text-align: left;
+				clear: both;
+			}
+			 
+			#timeline ul li:nth-child(odd)::before{ /* 设置时间轴中li的奇数行的样式 */
+				content: '';
+				position: absolute;
+				top: 24px;
+				right: -6px;
+				width: 10px;
+				height: 10px;
+				background: rgba(71, 68, 59, 1);
+				border-radius: 50%;
+				box-shadow: 0 0 0 3px rgba(71, 68, 59, 0.2);
+			}
+			 
+			#timeline ul li:nth-child(even)::before{ /* 设置时间轴中li的偶数行的样式 */
+				content: '';
+				position: absolute;
+				top: 24px;
+				left: -4px;
+				width: 10px;
+				height: 10px;
+				background: rgba(71, 68, 59, 1);
+				border-radius: 50%;
+				box-shadow: 0 0 0 3px rgba(71, 68, 59, 0.2);
+			}
+			 
+			#timeline ul li h3 { /* 设置时间轴中标题h3的样式 */
+				margin: 0;
+				padding: 0;
+				font-weight: 600;
+				color: rgba(71, 68, 59, 1);
+				font-size: 14px;
+			}
+			 
+			#timeline ul li p { /* 设置时间轴中内容p的样式 */
+				margin: 10px 0 0;
+				padding: 0;
+				font-size: 14px;
+			}
+			 
+			#timeline ul li .time h4 { /* 设置时间轴中时间h4的样式 */
+				margin: 0;
+				padding: 0;
+				font-size: 14px;
+			}
+			 
+			#timeline ul li:nth-child(odd) .time { /* 设置时间轴中标题的奇数行的样式 */
+				position: absolute;
+				top: 10px;
+				right: -165px;
+				margin: 0;
+				padding: 8px 16px;
+				background: rgba(71, 68, 59, 1);
+				color: white;
+				border-radius: 18px;
+				box-shadow: 0 0 0 3px rgba(71, 68, 59, 0.2);
+			}
+			 
+			#timeline ul li:nth-child(even) .time { /* 设置时间轴中标题的偶数行的样式 */
+				position: absolute;
+				top: 10px;
+				left: -165px;
+				margin: 0;
+				padding: 8px 16px;
+				background: rgba(71, 68, 59, 1);
+				color: white;
+				border-radius: 18px;
+				box-shadow: 0 0 0 3px rgba(71, 68, 59, 0.2);
+			}
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			#head{
+				height: 600px;
+				background-size: cover;
+            	background-image: url(http://p2.img.cctvpic.com/uploadimg/2020/02/02/1580604149718934.png);
+				background-repeat: no-repeat;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="head"></div>
+	<h2 class="biaoti">疫情起源</h2>
+	<div id="timeline">	
+	    <ul>
+	        <li>
+				<div class="content">
+					<h3>武汉出现第一例不明肺炎患者</h3>
+					<p>无华南海鲜市场接触史———《柳叶刀》</p>	
+				</div>
+				<div class="time">
+					<h4>2019年12月01日</h4>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<h3>官方通报第一例不明肺炎患者</h3>	
+				</div>
+				<div class="time">
+					<h4>2019年12月08日</h4>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<h3>出现</h3>	
+					<p>与华南海鲜市场有关病例———《柳叶刀》</p>
+				</div>
+				<div class="time">
+					<h4>2019年12月10日</h4>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<h3>有华南海鲜市场暴露史病例开始集中出现</h3>	
+				</div>
+				<div class="time">
+					<h4>2019年12月15日</h4>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<h3>上海市公共卫生临床中心收集到一份“不明原因发热患者”标本</h3>
+					<p>湖北省中西医结合医院 呼吸科主任张继先<br/>
+					发现四例反常肺炎病例 并提示科室做好防护 <br/>
+					该医院向疾控中心上报该4例反常病例</p>
+				</div>
+				<div class="time">
+					<h4>2019年12月26日</h4>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<h3>该医院决定直接向湖北省武汉市卫健委的疾控处报告</h3>	
+				</div>
+				<div class="time">
+					<h4>2019年12月29日</h4>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<h3>武汉启动病例追查</h3>
+					<p>有关“不明原因肺炎”消息开始在网上传播</p>
+				</div>
+				<div class="time">
+					<h4>2019年12月30日</h4>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<h3>国家卫健委第一批专家组抵达武汉</h3>
+					<p>武汉市卫健委第一次疫情通报 未发现明显人传人</p>
+				</div>
+				<div class="time">
+					<h4>2019年12月31日</h4>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<h3>华南海鲜批发市场被关闭</h3>
+					<p>8名医务人员因散布“武汉病毒性肺炎”不实消息被警方传唤</p>
+				</div>
+				<div class="time">
+					<h4>2020年01月01日</h4>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<h3>武汉飞往新加坡旅客入境接受体温检测</h3>
+					<p>排除流感 禽流感 腺病毒感染等常见呼吸道疾病</p>
+				</div>
+				<div class="time">
+					<h4>2020年01月03日</h4>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<h3>上海市公共卫生临床中心检测出类SARS冠状病毒</h3>
+					<p>武汉市卫健委通报 未发现明显的人传人<br/>
+					排出传染性非典型肺炎和中东呼吸综合征(MERS)等呼吸道病原</p>
+				</div>
+				<div class="time">
+					<h4>2020年01月05日</h4>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<h3>病原体确定为“新型冠状病毒”</h3>
+				</div>
+				<div class="time">
+					<h4>2020年01月08日</h4>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<h3>首个被确诊的新冠死亡病例</h3>
+				</div>
+				<div class="time">
+					<h4>2020年01月09日</h4>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<h3>湖北两会召开</h3>
+					<p>医生李文亮因出现高度怀疑症状正式住院<br/>
+					世卫组织：命名病毒为“2019新型冠状病毒”(2019-nCoV)</p>
+				</div>
+				<div class="time">
+					<h4>2020年01月13日</h4>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<h3>北京 广东出现确诊病例</h3>
+					<p>国家卫健委第二批专家组赴武汉</p>
+				</div>
+				<div class="time">
+					<h4>2020年01月19日</h4>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<h3>武汉封城</h3>
+					<p>武汉决定十天内建一所传染病医院</p>
+				</div>
+				<div class="time">
+					<h4>2020年01月23日</h4>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<h3>各地医疗队前往武汉</h3>
+					<p>武汉决定启动建设雷神山医院<br/>
+					排出传染性非典型肺炎和中东呼吸综合征(MERS)等呼吸道病原</p>
+				</div>
+				<div class="time">
+					<h4>2020年01月25日</h4>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<h3>各国各地为武汉支援捐赠物资</h3>
+				</div>
+				<div class="time">
+					<h4>01月26~29日</h4>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<h3>火神山医院交付</h3>
+				</div>
+				<div class="time">
+					<h4>2020年02月02日</h4>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<h3>武汉连夜建设三所方舱医院</h3>
+				</div>
+				<div class="time">
+					<h4>2020年02月03日</h4>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<h3>香港出现死亡病例</h3>
+					<p>湖北红十字会3名领导被问责</p>
+				</div>
+				<div class="time">
+					<h4>2020年02月04日</h4>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<h3>暂命名“新冠肺炎”英文简称“NCP”</h3>
+					<p>雷神山医院正式交付并收治首批病人</p>
+				</div>
+				<div class="time">
+					<h4>2020年02月08日</h4>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<h3>世卫组织：新型冠状病毒感染引起的疾病命名为“COVID-19”</h3>
+					<p>国家病毒分类委员会：命名病毒为“SARS-CoV-2”</p>
+				</div>
+				<div class="time">
+					<h4>2020年02月11日</h4>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<h3>治疗新型冠状特免血浆制品投入临床</h3>
+					<p>武汉号召康复者捐血浆</p>
+				</div>
+				<div class="time">
+					<h4>2020年02月14日</h4>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<h3>我国口罩日产超过7000万只 医用口罩突破3000万只</h3>
+					<p>中国向日本提供抗疫情物资</p>
+				</div>
+				<div class="time">
+					<h4>2020年02月27日</h4>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<h3>首例新冠肺炎尸检报告发布</h3>
+				</div>
+				<div class="time">
+					<h4>2020年02月28日</h4>
+				</div>
+			</li>
+			<li>
+				<div class="content">
+					<h3>历时三年中国防疫基本放开</h3>
+					<p>也许不是一切的开始 也未到真正的结束</p>
+				</div>
+				<div class="time">
+					<h4>2022年12月</h4>
+				</div>
+			</li>
+	</div>
+	</body>
+</html>
